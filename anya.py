@@ -16,11 +16,16 @@ def get_num_hexagons():
 
 N = get_num_hexagons()
 
-k = 500 / (N + 0.5)
+d = 500 / (N + 0.5)
 
 from turtle import *
 
+lngth = -250 + k/2
+wdth = 250
+
 for i in range(N):
-    goto()
+    for j in range(N):
+        draw_hexagon(lngth, wdth, k, color1)
+
 
 
